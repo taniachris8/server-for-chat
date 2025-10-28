@@ -24,6 +24,11 @@ app.use((req, res, next) => {
 });
 
 const userState = [];
+
+app.get("/", (req, res) => {
+  res.send("Server is running");
+});
+
 app.post("/new-user", async (request, response) => {
   if (Object.keys(request.body).length === 0) {
     const result = {
