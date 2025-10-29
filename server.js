@@ -24,8 +24,6 @@ app.use((req, res, next) => {
 });
 
 const userState = [];
-userState.length = 0;
-
 
 app.get("/", (req, res) => {
   res.send("Server is running");
